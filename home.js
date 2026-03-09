@@ -3075,7 +3075,7 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 		</h4>
 		<p class="p-medium font-600">${x}${S}</p>
 	</div>`}function w0(){return`
-		<div class="pin-normal w-embed">
+		<div class="pin-square-normal w-embed">
 			<svg
 				viewBox="0 0 20 20"
 				fill="none"
@@ -3096,7 +3096,7 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 			</svg>
 		</div>
 	`}function T0(){return`
-		<div class="pin-normal w-embed">
+		<div class="pin-square-normal w-embed">
 			<svg
 				viewBox="0 0 20 20"
 				fill="none"
@@ -3111,7 +3111,7 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 			</svg>
 		</div>
 	`}function S0(){return`
-		<div class="pin-normal w-embed">
+		<div class="pin-square-normal w-embed">
 			<svg
 				viewBox="0 0 20 20"
 				fill="none"
@@ -3124,7 +3124,7 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 			</svg>
 		</div>
 	`}function O_(){return`
-		<div class="pin-normal w-embed">
+		<div class="pin-square-normal w-embed">
 			<svg
 				viewBox="0 0 20 20"
 				fill="none"
@@ -3203,9 +3203,7 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
             <div class="flex">
                 ${G?`
                 <div class="pins-table_condition ${x}">
-                    <div class="pin-normal w-embed">
                         ${S}
-                    </div>
                     <div class="font-600">${C} ${R}</div>
                 </div>
                 `:"\u2014"} 
