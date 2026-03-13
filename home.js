@@ -3008,10 +3008,11 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 	>
 	<div
 		class="bg-white height-100-pct relative padding-2 flex vertical justify-space-between t_padding-1-25 width-100-pct radius-1-5">
-		<div class="height-2"></div>
-		<div class="flex vertical gap-0-5">
-			<div class="flex align-center justify-space-between gap-1-5">
-				<div class="max-width-s">
+		<div class="flex vertical gap-0-5 max-height-100-pct height-100-pct">
+			<div class="height-2"></div>
+			<div id="map-pop-up-top" class="flex align-center justify-space-between gap-1-5 relative">
+				<div class="c__pin-modal-shadow reverse"></div>
+				<div class="max-width-xxs">
 					<h3 id="site-title" class="h4 font-700">${G.name}</h3>
 				</div>
 				<div class="flex gap-1-25">
@@ -3026,9 +3027,8 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 				</divs>
 			</div>
 			`:`
-				<div class="relative">
 				<div class="c__pin-modal-height">
-					<div class="flex vertical gap-1-25 m_gap-0-75">
+					<div class="flex vertical gap-1-25 m_gap-0-75">	
 						${Ze?`
 								<div class="flex vertical gap-0-75 m_gap-0-5">
 									<h4 class="p-medium font-600">Quality impaired</h4>
@@ -3059,16 +3059,12 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 							`:""}
 					</div>
 				</div>
-				<div class="c__pin-modal-shadow reverse"></div>
-				<div class="c__pin-modal-shadow"></div>
-			</div>
-			`}
-			
-
-			<div class="height-2"></div>
-		${G.slug?`<a href="/sites/${G.slug}" class="button primary w-button">View more details</a>`:""}
+			`}		
+		${G.slug?`
+		<div class="relative">
+			<div class="c__pin-modal-shadow"></div>
+			<a href="/sites/${G.slug}" class="button primary w-button">View more details</a>`:""}
 		</div>
-		
 	</div>
 </div>
 			`}function Zw(G,x,S){return`
