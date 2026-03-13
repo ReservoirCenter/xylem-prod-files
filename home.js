@@ -3010,8 +3010,13 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 		class="bg-white height-100-pct relative padding-2 flex vertical justify-space-between t_padding-1-25 width-100-pct radius-1-5">
 		<div class="flex vertical gap-0-5 max-height-100-pct height-100-pct">
 			<div class="height-2"></div>
+
+			${le?`
+			<div class="flex vertical justify-space-between" style="flex-grow: 1;">
+			`:""}
+
 			<div id="map-pop-up-top" class="flex align-center justify-space-between gap-1-5 relative">
-				<div class="c__pin-modal-shadow reverse"></div>
+				${le?"":'<div class="c__pin-modal-shadow reverse"></div>'}
 				<div class="max-width-xxs">
 					<h3 id="site-title" class="h4 font-700">${G.name}</h3>
 				</div>
@@ -3022,9 +3027,7 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 			
 			${le?`
 			<div class="sensor-status">
-				<divs class="sensor-status__text">
-					Station is offline
-				</divs>
+					<img width=404px src="https://cdn.prod.website-files.com/699497263199cd609caba208/69b3ec074e836ff056b3f4a5_offline-station.avif">
 			</div>
 			`:`
 				<div class="c__pin-modal-height">
@@ -3062,8 +3065,12 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 			`}		
 		${G.slug?`
 		<div class="relative">
-			<div class="c__pin-modal-shadow"></div>
+		${le?"":'<div class="c__pin-modal-shadow"></div>'}
 			<a href="/sites/${G.slug}" class="button primary w-button">View more details</a>`:""}
+
+		${le?`
+			</div>
+			`:""}
 		</div>
 	</div>
 </div>
