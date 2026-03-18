@@ -3027,7 +3027,7 @@ ${c.vertexSource}`,this.forceManualRenderingForInstanceIDShaders&&(D=D.replaceAl
 			
 			${le?`
 			<div class="sensor-status">
-					<img width=404px src="https://cdn.prod.website-files.com/699497263199cd609caba208/69b3ec074e836ff056b3f4a5_offline-station.avif">
+					<img width=404px src="https://cdn.prod.website-files.com/699497263199cd609caba208/69b3ec074e836ff056b3f4a5_65a934975c4800ba30e79610f062ae0a_offline-station.avif">
 			</div>
 			`:`
 				<div class="c__pin-modal-height">
